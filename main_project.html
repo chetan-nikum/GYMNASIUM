@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMNASIUM - Gym Website</title>
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main_project.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/gym-logo.png" alt="Gym Logo"> GYMNASIUM
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#program" class="nav__link">Programs</a></li>
+                    <li><a href="#bmi" class="nav__link">BMI</a></li>
+                    <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li><a href="#choose" class="nav__link">Choose Us</a></li>
+                    <li><a href="#register" class="button--register">Register Now</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+            </div>
+        </nav>
+    </header>
+    
+<!-- Home Section -->
+<section class="home" id="home">
+    <h1 class="home__title">BUILD YOUR <span>BEST SHAPE</span></h1>
+    <p class="home__description">Join us to achieve your fitness goals with world-class facilities and coaches.</p>
+
+    <div class="home__buttons">
+        <a href="#home" class="button">Home</a>
+        <a href="#program" class="button">Explore Programs</a>
+        <a href="#bmi" class="button">BMI</a>
+        <a href="#pricing" class="button">Pricing</a>
+        <a href="#choose" class="button">Choose Us</a>
+        <a href="#register" class="button--register">Register Now</a>
+    </div>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="assets/gym1.png" alt="Gym Workout 1" />
+                <img id="slide-2" src="assets/gym2.jfif" alt="Gym Workout 2" />
+                <img id="slide-3" src="assets/gym3.jfif" alt="Gym Workout 3" />
+                <img id="slide-4" src="assets/gym4.jfif" alt="Gym Workout 4" />
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <!-- Program Section -->
+    <section class="program" id="program">
+        <h2 class="section__title">Our Programs</h2>
+        <div class="program__grid">
+            <div class="program__item">
+                <img src="assets/flex-muscle.jpg" alt="Flex Muscle">
+                <h3>Sculpt Strength</h3>
+                <p>Strengthen and sculpt your muscles with our guided routines.</p>
+            </div>
+            <div class="program__item">
+                <img src="assets/cardio.jpg" alt="Cardio Exercise">
+                <h3>Cardio Exercise</h3>
+                <p>Boost endurance with high-energy cardio sessions.</p>
+            </div>
+            <div class="program__item">
+                <img src="assets/yoga.jpg" alt="Yoga">
+                <h3>Basic Yoga</h3>
+                <p>Enhance flexibility and balance with expert-led yoga.</p>
+            </div>
+            <div class="program__item">
+                <img src="assets/weightlifting.jpg" alt="Weight Lifting">
+                <h3>Weight Lifting</h3>
+                <p>Learn proper techniques to master your lifts.</p>
+            </div>
+        </div>
+    </section>
+    <!-- BMI Section -->
+    <section id="bmi">
+        <h2 class="section__title">Calculate Your BMI</h2>
+        <form class="bmi__form">
+            <label for="height">Height (cm) </label>
+            <input type="number" id="height" placeholder="cm" required>
+            <label for="weight">Weight (kg) </label>
+            <input type="number" id="weight" placeholder="kg" required>
+            <button type="button" id="calculate-btn">Calculate BMI</button>
+        </form>
+        <div id="bmi-result" class="bmi-result"></div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2 class="section__title">Our Pricing Plans</h2>
+        <div class="pricing__plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>₹1100 / month</p>
+                <ul>
+                    <li>Access to gym equipment</li>
+                    <li>One group class per week</li>
+                    <li>Locker access</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <p>₹1600 / month</p>
+                <ul>
+                    <li>Access to gym equipment</li>
+                    <li>Three group classes per week</li>
+                    <li>Locker and sauna access</li>
+                    <li>One personal training session</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>₹2100 / month</p>
+                <ul>
+                    <li>Unlimited access to gym equipment</li>
+                    <li>Unlimited group classes</li>
+                    <li>Locker, sauna, and pool access</li>
+                    <li>Weekly personal training sessions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section id="choose" class="why-choose-us">
+        <h2 class="why-choose-us__title">Why Choose Us?</h2>
+        <p class="why-choose-us__description">We offer unparalleled services and facilities to help you reach your fitness goals.</p>
+        <div class="why-choose-us__features">
+            <div class="why-choose-us__feature">
+                <h4>Experienced Trainers</h4>
+                <p>Our trainers are certified and have years of experience.</p>
+            </div>
+            <div class="why-choose-us__feature">
+                <h4>24/7 Access</h4>
+                <p>Enjoy round-the-clock access to our gym facilities.</p>
+            </div>
+            <div class="why-choose-us__feature">
+                <h4>Modern Equipment</h4>
+                <p>We have the latest equipment for all your fitness needs.</p>
+            </div>
+            <div class="why-choose-us__feature">
+                <h4>Group Classes</h4>
+                <p>Join our fun and engaging group classes for motivation.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color: #E1306C;"></i> Instagram</a>
+                <a href="https://x.com" target="_blank"><i class="fab fa-x" style="color: #000000;"></i> X</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" style="color: #1877F2;"></i> Facebook</a>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-note" style="text-align: center; font-size: 12px; margin-top: 10px;">
+            Created by Chetan Nikum
+        </div>
+    </footer>
+    
+    <script src="main_project.js"></script> <!-- Link to  JavaScript file -->
+</body>
+</html>
